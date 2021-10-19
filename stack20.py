@@ -12,10 +12,8 @@ def valid_parentheses(instr,dic):
                 return False
             elif len(lst) != 0:             
                 if (lst[-1] , i) in list(dic.items()):
-                    # print((lst[-1] , i))
                     lst.pop()
                 elif (lst[-1] , i) not in list(dic.items()):
-                    # print((lst[-1] , i))
                     return False
     # print(lst)
     if len(lst) == 0:
